@@ -1,18 +1,13 @@
 import React from "react";
 import "./App.css";
-// import { legacy_createStore as createState } from 'redux';
-import { Provider, useSelector, useDispatch } from "react-redux";
-import store from "./app/store.js";
-// import counterSlice from './counterSlice/CounterSlice.js';
+import { useSelector, useDispatch } from "react-redux";
 import { UP } from "./counterSlice/CounterSlice.js";
 
 export default function App() {
   return (
-    <Provider store={store}>
-      <div>
-        <Count />
-      </div>
-    </Provider>
+    <div>
+      <Count />
+    </div>
   );
 }
 
